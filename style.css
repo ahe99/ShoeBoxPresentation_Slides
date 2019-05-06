@@ -1,0 +1,96 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Courier;
+}
+.container-fluid {
+  padding: 0;
+}
+.section {
+  min-height: 50vh;
+  background-color: gainsboro;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5vmin;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  line-height: 8vh;
+}
+.title {
+  top: 50vh;
+  padding: 0;
+  height: 10vmin;
+  transform: translateY(-50%);
+  position: absolute;
+  background-color: gainsboro;
+}
+.QnA {
+  bottom: 50vh;
+  padding: 0;
+  height: 10vmin;
+  transform: translateY(50%);
+  position: absolute;
+  background-color: gainsboro;
+}
+.title h1,
+.QnA h1 {
+  background-color: lightsalmon;
+  text-align: right;
+  line-height: 5vmin;
+}
+.QnA h1 {
+  font-size: 6vmin;
+  text-align: center;
+}
+img {
+  width: 100%;
+  z-index: -1;
+}
+p {
+  margin: 0px;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+.parallax {
+  height: 50vh;
+  background-color: transparent;
+}
+.parallax-full {
+  height: 100vh;
+  background-color: transparent;
+}
+/*選單*/
+.menu {
+  bottom: 0;
+  position: fixed;
+  z-index: 5;
+}
+#menu li a {
+  margin-bottom: 1px;
+  padding: 1vmin 2vmin;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: greenyellow;
+  border-left: 5px solid black;
+  font-size: 2vmin;
+  font-weight: bold;
+  opacity: 0.5;
+  color: black;
+}
+#menu li a:hover,
+#menu li a.active {
+  background-color: cornflowerblue;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
